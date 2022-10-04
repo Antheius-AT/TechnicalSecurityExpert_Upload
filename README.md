@@ -30,6 +30,7 @@ Als Datenbank wurde die NoSql Datenbank RethinkDB verwendet.
 Links zu den Originalrepositories:
 * Das Projekt in dem eine XSS Schwachstelle implementiert wurde: https://github.com/TTMVP-AT/XSS-Dummy
 * Das Projekt in dem das Pool Diary implementiert wurde: https://github.com/Antheius-AT/Webentwicklung
+* Das 4-Gewinnt SignalR Projekt repository ist leider nicht öffentlich, wenngleich ich mit den Kollegen abgeklärt habe, dass es in Ordnung ist den Code hier neu hochzuladen. Da das repository von unserem Dozenten erstellt wurde, bin ich leider nicht befugt es öffentlich zu machen.
 
 ## Contents des Anderes Folder
 
