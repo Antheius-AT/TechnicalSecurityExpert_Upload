@@ -29,3 +29,4 @@ Dieses Projekt wurde ebenso mit einem Angular Frontend und einem Node.js backend
 ## Contents des Anderes Folder
 
 In diesem Folder befinden sich einerseits Auszüge aus dem Curriculum aus meinem Bachelor, von LVs bei denen ich der Meinung bin, die Kenntnisse die ich darin erworben habe, sind relevant, andererseits ein Motivationsschreiben, warum ich diese Spezialisierung wähle.
+Außerdem ist ein PacketTracer Zertifikat zu finden, welches wir im Rahmen der LV "Betriebssysteme und Netzwerke" erwerben mussten.
