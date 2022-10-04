@@ -1,5 +1,5 @@
 # TechnicalSecurityExpert_Upload
-Diverse Uploads die als Nachweis für Vorkenntnisse für den TechnicalSecurityExpert Karrierepfad im Rahmen des Masterstudiums des FHTW dienen sollen.
+Diverse Uploads die als Nachweis für Vorkenntnisse für den TechnicalSecurityExpert Karrierepfad im Rahmen des Masterstudiums von Gregor Faiman am FHTW dienen sollen.
 Diese README soll dabei helfen, einen Überblick über die hochgeladenen Files zu geben.
 
 ## Contents des Python Folders
