@@ -1,0 +1,20 @@
+<div class="p-grid p-m-6">
+    <div class="p-col-12">
+        <label>Benutzername</label>
+    </div>
+    <div class="p-col-12">
+        <input type="text" [(ngModel)]="username" pInputText placeholder="Benutzername eingeben..">
+    </div>
+    <div class="p-col-12">
+        <label>Passwort</label>
+    </div>
+    <div class="p-col-12">
+        <input type="password" [(ngModel)]="password" [feedback]="false" pPassword placeholder="Passwort eingeben..">
+    </div>
+    <div class="p-col-12">
+        <p-button (click)='confirmLogin()'>Einloggen</p-button>
+    </div>
+    <div class="p-col-12">
+        <p-toggleButton onLabel="Stattdessen Registrieren" (onChange)="changeForm()" [(ngModel)]="isLoginActive"></p-toggleButton>
+    </div>
+</div>

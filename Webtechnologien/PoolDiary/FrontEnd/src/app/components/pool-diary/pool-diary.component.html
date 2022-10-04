@@ -1,0 +1,26 @@
+<p-table [paginator]="true" [rows]="20" [responsive]="true" [rowHover]="true" [autoLayout]="true" [value]="pools">
+    <ng-template pTemplate="header">
+        <tr>
+           <th>Datum</th>
+           <th>Lufttemperatur</th>
+           <th>Wassertemperatur</th>
+           <th>Chlorgehalt</th>
+           <th>PH-Wert</th>
+           <th>Rücklaufdauer</th>
+           <th>Zusätzliche Kommentare</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-poolData>
+        <tr>
+            <td>{{poolData.date | date:'longDate'}}</td>
+            <td>{{poolData.airTemperature}}</td>
+            <td>{{poolData.waterTemperature}}</td>
+            <td>{{poolData.chlorineAmount}}</td>
+            <td>{{poolData.phValue}}</td>
+            <td>{{poolData.backflushDuration}}</td>
+            <td>{{poolData.comment}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-button routerLink="/addEntry" label="Hinzufügen" ></p-button>

@@ -1,0 +1,34 @@
+<h1>Neuen Eintrag hinzufügen</h1>
+<div class="p-col-12 p-md-4">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Lufttemperatur (Grad Celsius)</span>
+        <input type="number" step="0.001" [min]="airTempMinimum" [max]="airTempMaximum" pInputText [(ngModel)]="airTemperature" placeholder="Lufttemperatur eingeben..">         
+    </div>
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Wassertemperatur (Grad Celsius)</span>
+        <input type="number" step="0.001" pInputText [max]="waterTempMaximum" [min]="0" [(ngModel)]="waterTemperature" placeholder="Wassertemperatur eingeben..">
+    </div>      
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Chlorgehalt (%)</span>
+        <input type="number" step="0.001" pInputText [max]="5" [min]="0" [(ngModel)]="chlorineAmount" placeholder="Chlorgehalt eingeben..">
+    </div>     
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">PH-Wert</span>
+        <input type="number" step="0.001" pInputText [min]="phMinimum" [max]="14" [(ngModel)]="phValue" placeholder="PH-Wert eingeben..">
+    </div>     
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Rücklaufdauer (Minuten)</span>
+        <input type="number" step="0.001" [min]="1" pInputText [(ngModel)]="backflushDuration" placeholder="Rücklaufdauer eingeben..">
+    </div>     
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Zusätzliche Kommentare</span>
+        <input type="text" pInputText [(ngModel)]="comment" placeholder="Zusätzliche Kommentare eingeben..">         
+    </div>
+</div>
+
+<p-button [disabled]="!isButtonEnabled()" label="Bestätigen" (click)="tryAddEntry()"></p-button>

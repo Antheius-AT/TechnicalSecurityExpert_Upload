@@ -1,0 +1,79 @@
+﻿<!--
+    copyright file: Login_.xaml. Company: FHWN
+    Copyright (c) FHWN. All rights reserved.
+    Author: Tamara Mayer
+    -->
+    <Window x:Class="FourWinsWPFApp.Lobby"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converter="clr-namespace:FourWinsWPFApp.Converter"
+
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Window.Resources>
+        <converter:ChallengeStatusToColorConverter x:Key="challengeStatusConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ListView Name="playersView" ItemsSource="{Binding Players}" Grid.Column="0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Available Players">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Player.Username}" TextWrapping="Wrap" Foreground="{Binding Player.ChallengeStatus, Converter={StaticResource challengeStatusConverter}}"/>
+                                    <Button Content="Accept challenge" Command="{Binding AcceptChallengeCommand}" CommandParameter="{Binding}" Margin="3">
+                                        <Button.Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="Visibility" Value="Hidden"/>
+                                                
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Player.ChallengeStatus}" Value="ChallengeIncoming">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Name="gamesView" ItemsSource="{Binding ActiveGames}" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Active Games">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding PlayerOne}"/>
+                                    <TextBlock Text=" VS "/>
+                                    <TextBlock Text="{Binding PlayerTwo}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button CommandParameter="{Binding SelectedItem, ElementName=playersView}" Command="{Binding ChallengePlayerCommand}" Content="Challenge" Grid.Column="0" Grid.Row="1" Width="100" Height="23"/>
+        <Button CommandParameter="{Binding SelectedItem, ElementName=gamesView}" Command="{Binding WatchGameCommand}" Content="Watch" Grid.Column="1" Grid.Row="1"  Width="100" Height="23"/>
+
+    </Grid>
+</Window>
