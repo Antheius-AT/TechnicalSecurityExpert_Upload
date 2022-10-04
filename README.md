@@ -22,9 +22,11 @@ Das Projekt FourWins_SignalR war ein Teamprojekt, welches ich gemeinsam mit 3 an
 
 Das Projekt PoolDiary ist ein von mir allein geschriebenes Projekt, bei dem es darum ging, ein Pool Tagebuch zu führen, in dem diverse Messkriterien die für einen Pool relevant sind festgehalten werden können.
 Die verwendeten Technologien hierbei waren Angular für das FrontEnd und Node js für das Backend.
+Als Datenbank wurde per Vorgabe RethinkDB verwendet.
 
 Das Projekt XSS_vulnerability_sample ist ein Projekt welches ich gemeinsam mit einem Mitstudierenden geschrieben habe. In diesem Projekt ging es darum, für eine IT Security Lehrveranstaltung eine XSS Schwachstelle zu implementieren und zu demonstrieren, welche anschließend von Mitstudierenden behoben werden sollte.
 Dieses Projekt wurde ebenso mit einem Angular Frontend und einem Node.js backend geschrieben.
+Als Datenbank wurde die NoSql Datenbank RethinkDB verwendet.
 
 Links zu den Originalrepositories:
 * Das Projekt in dem eine XSS Schwachstelle implementiert wurde: https://github.com/TTMVP-AT/XSS-Dummy
