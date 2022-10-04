@@ -11,9 +11,8 @@ ermöglichten.
 
 Konkret beinhält:
 
--) das File *SendMail.py* Funktionen, die einerseits zum verschicken selbst, andererseits für gewisse Validierung verwendet wurden.
-
--) das File *CreateArchive.py* Funktionen, die neben Validierung dafür verwendet wurden, automatisiert ein Verzeichnis für das aktuelle Datum zu erstellen, wenn ein solches Verzeichnis noch nicht existierte.
+* das File *SendMail.py* Funktionen, die einerseits zum verschicken selbst, andererseits für gewisse Validierung verwendet wurden.
+* das File *CreateArchive.py* Funktionen, die neben Validierung dafür verwendet wurden, automatisiert ein Verzeichnis für das aktuelle Datum zu erstellen, wenn ein solches Verzeichnis noch nicht existierte.
 
 ## Contents des Webtechnologien Folders
 
