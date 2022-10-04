@@ -26,6 +26,10 @@ Die verwendeten Technologien hierbei waren Angular für das FrontEnd und Node js
 Das Projekt XSS_vulnerability_sample ist ein Projekt welches ich gemeinsam mit einem Mitstudierenden geschrieben habe. In diesem Projekt ging es darum, für eine IT Security Lehrveranstaltung eine XSS Schwachstelle zu implementieren und zu demonstrieren, welche anschließend von Mitstudierenden behoben werden sollte.
 Dieses Projekt wurde ebenso mit einem Angular Frontend und einem Node.js backend geschrieben.
 
+Links zu den Originalrepositories:
+* Das Projekt in dem eine XSS Schwachstelle implementiert wurde: https://github.com/TTMVP-AT/XSS-Dummy
+* Das Projekt in dem das Pool Diary implementiert wurde: https://github.com/Antheius-AT/Webentwicklung
+
 ## Contents des Anderes Folder
 
 In diesem Folder befinden sich einerseits Auszüge aus dem Curriculum aus meinem Bachelor, von LVs bei denen ich der Meinung bin, die Kenntnisse die ich darin erworben habe, sind relevant, andererseits ein Motivationsschreiben, warum ich diese Spezialisierung wähle.
