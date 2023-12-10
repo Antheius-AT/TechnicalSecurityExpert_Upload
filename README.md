@@ -1,38 +1,33 @@
 # TechnicalSecurityExpert_Upload
-Diverse Uploads die als Nachweis für Vorkenntnisse für den TechnicalSecurityExpert Karrierepfad im Rahmen des Masterstudiums von Gregor Faiman am FHTW dienen sollen.
-Diese README soll dabei helfen, einen Überblick über die hochgeladenen Files zu geben.
 
-## Contents des Python Folders
+Diverse uploads intended as evidence of expertise for the TechnicalSecurityExpert career path within Gregor Faiman's master's program at FHTW. This README is meant to provide an overview of the uploaded files.
 
-In diesem Folder befinden sich zwei Skripte, die ich im Rahmen eines Teamprojekts 2020 geschrieben habe.
-Thema von diesem war es, die Logik eines Roboters zu schreiben, dessen prototypische Funktion es sein sollte, auf einen Hilfeschrei zu reagieren, Fotos der Umgebung zu machen und diese Fotos an eine vorher konfigurierte Mailadresse zu schicken.
-Die beiden Python files stellen einerseits Funktionen bereit, die das Senden des Mails, sowie das Erstellen eines Ordners für das aktuelle Datum 
-ermöglichten.
+## Contents of the Python Folder
 
-Konkret beinhält:
+This folder contains two scripts written during a team project in 2020. The project involved creating the logic for a robot prototype whose primary function was to respond to a distress call, take photos of the surroundings, and send these photos to a pre-configured email address. The two Python files provide functions for both sending the email and creating a folder for the current date.
 
-* das File *SendMail.py* Funktionen, die einerseits zum verschicken selbst, andererseits für gewisse Validierung verwendet wurden.
-* das File *CreateArchive.py* Funktionen, die neben Validierung dafür verwendet wurden, automatisiert ein Verzeichnis für das aktuelle Datum zu erstellen, wenn ein solches Verzeichnis noch nicht existierte.
+Specifically, it includes:
 
-## Contents des Webtechnologien Folders
+* The file *SendMail.py* contains functions used for sending emails and certain validations.
+* The file *CreateArchive.py* contains functions used for validations and for automatically creating a directory for the current date if it does not already exist.
 
-In diesem Folder befinden sich 3 Webprojekte, die alle im Rahmen des Bachelorstudiums erstellt worden sind.
-Das Projekt FourWins_SignalR war ein Teamprojekt, welches ich gemeinsam mit 3 anderen Mitstudierenden geschrieben habe, bei dem es darum ging in C# unter Zuhilfenahme von SignalR, eine Multiplayer Implementierung von Vier Gewinnt zu implementieren.
+## Contents of the Webtechnologien Folder
 
-Das Projekt PoolDiary ist ein von mir allein geschriebenes Projekt, bei dem es darum ging, ein Pool Tagebuch zu führen, in dem diverse Messkriterien die für einen Pool relevant sind festgehalten werden können.
-Die verwendeten Technologien hierbei waren Angular für das FrontEnd und Node js für das Backend.
-Als Datenbank wurde per Vorgabe RethinkDB verwendet.
+This folder contains three web projects created during the bachelor's program.
 
-Das Projekt XSS_vulnerability_sample ist ein Projekt welches ich gemeinsam mit einem Mitstudierenden geschrieben habe. In diesem Projekt ging es darum, für eine IT Security Lehrveranstaltung eine XSS Schwachstelle zu implementieren und zu demonstrieren, welche anschließend von Mitstudierenden behoben werden sollte.
-Dieses Projekt wurde ebenso mit einem Angular Frontend und einem Node.js backend geschrieben.
-Als Datenbank wurde die NoSql Datenbank RethinkDB verwendet.
+1. The project FourWins_SignalR was a team project, developed in C# using SignalR, with the aim of implementing a multiplayer version of Connect Four. I collaborated with three other students on this project.
 
-Links zu den Originalrepositories:
-* Das Projekt in dem eine XSS Schwachstelle implementiert wurde: https://github.com/TTMVP-AT/XSS-Dummy
-* Das Projekt in dem das Pool Diary implementiert wurde: https://github.com/Antheius-AT/Webentwicklung
-* Das 4-Gewinnt SignalR Projekt repository ist leider nicht öffentlich, wenngleich ich mit den Kollegen abgeklärt habe, dass es in Ordnung ist den Code hier neu hochzuladen. Da das repository von unserem Dozenten erstellt wurde, bin ich leider nicht befugt es öffentlich zu machen.
+2. The project PoolDiary is a solo project focused on maintaining a pool diary where various measurement criteria relevant to a pool can be recorded. Technologies used include Angular for the frontend and Node.js for the backend, with RethinkDB as the specified database.
 
-## Contents des Anderes Folder
+3. The project XSS_vulnerability_sample was a joint project with another student. It involved implementing an XSS vulnerability for an IT security course and demonstrating it for subsequent resolution by fellow students. This project also used Angular for the frontend, Node.js for the backend, and RethinkDB as the database.
 
-In diesem Folder befinden sich einerseits Auszüge aus dem Curriculum aus meinem Bachelor, von LVs bei denen ich der Meinung bin, die Kenntnisse die ich darin erworben habe, sind relevant, andererseits ein Motivationsschreiben, warum ich diese Spezialisierung wähle.
-Außerdem ist ein PacketTracer Zertifikat zu finden, welches wir im Rahmen der LV "Betriebssysteme und Netzwerke" erwerben mussten.
+Links to the original repositories:
+
+* The project with the implemented XSS vulnerability: [XSS-Dummy](https://github.com/TTMVP-AT/XSS-Dummy)
+* The project with the Pool Diary implementation: [Webentwicklung](https://github.com/Antheius-AT/Webentwicklung)
+* Unfortunately, the 4-Gewinnt SignalR project repository is not public. Although I have clearance from colleagues to upload the code here, since the repository was created by our instructor, I am not authorized to make it public.
+
+## Contents of the Other Folder
+
+This folder contains excerpts from the curriculum of my bachelor's program, particularly from courses where I believe the acquired knowledge is relevant. Additionally, there is a motivation letter explaining why I chose this specialization. Furthermore, a PacketTracer certificate obtained during the course "Operating Systems and Networks" is included.
+
