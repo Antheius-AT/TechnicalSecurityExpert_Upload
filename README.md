@@ -1,6 +1,6 @@
 # TechnicalSecurityExpert_Upload
 
-Various uploads intended as evidence of expertise for the *TechnicalSecurityExpert* career path within my master's program at FHTW. This README is meant to provide an overview of the uploaded files and what to find where.
+Various uploads intended as evidence of expertise for the *TechnicalSecurityExpert* career path within my master's programme at FHTW. This README is meant to provide an overview of the uploaded files and what to find where.
 
 ## Contents of the Python Folder
 
@@ -13,7 +13,7 @@ Specifically, it includes:
 
 ## Contents of the Webtechnologien Folder
 
-This folder contains three web projects created during my bachelor's program.
+This folder contains three web projects created during my bachelor's programme.
 
 1. The project FourWins_SignalR was a team project, developed in C# using SignalR, with the aim of implementing a multiplayer version of Connect Four. I collaborated with three other students on this project.
 
